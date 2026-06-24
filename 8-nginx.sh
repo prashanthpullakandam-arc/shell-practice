@@ -1,3 +1,3 @@
 #!/bin/bash
-id=(id -i)
+id=$(id -i)
 echo "user id is $id"
