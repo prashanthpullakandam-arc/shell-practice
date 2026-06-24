@@ -10,5 +10,5 @@ if [ $? -eq 0]
 then
 echo "enginix having some error"
 else
-echo "nginx got installed
+echo "nginx got installed"
 fi
