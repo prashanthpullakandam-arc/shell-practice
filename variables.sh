@@ -1,5 +1,4 @@
 #!/bin/bash
-
-scriptlog =$(date)
+scriptlog=$(date)
 echo "log generated at $scriptlog"
 
