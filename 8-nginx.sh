@@ -6,7 +6,7 @@ echo "user is not super user"
 return 1
 fi
 dnf install nginx -y
-if [ $? -eq 0 ]
+if [ $? -ne 0 ]
 then
 echo "enginix having some error"
 else
