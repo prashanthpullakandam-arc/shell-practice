@@ -4,4 +4,4 @@ G="\e[32m"
 y="\e[32m"
 n="\e[0m"
 
-echo -e "$ Hello i am $n,$g prashanth $n,$y i am learning devops $n"
+echo -e "$R Hello i am $n,$G prashanth $n,$y i am learning devops $n"
