@@ -18,7 +18,7 @@ echo "$2 got failed" | tee -a $LOGFILE
 fi
 }
 
-for package in {$@}
+for package in $@
 do
 dnf list installed $package &>>$LOGFILE
 if [ $? -ne 0 ]
