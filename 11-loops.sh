@@ -5,7 +5,7 @@ LOGFILE="/var/logs/shellscript/$0.log"
 id=$(id -u)
 if [ $id -ne 0 ]
 then
-echo "user is not super user" |tee -a $LGOFILE
+echo "user is not super user" |tee -a $LOGFILE
 exit 1
 fi
 mkdir -p LOG
@@ -20,7 +20,7 @@ fi
 
 for package in {$@}
 do
-dnf list installed $package
+dnf list installed $package &>>$LOGFILE
 if [ $? -ne 0 ]
 then
 dnf install $package -y &>>$LOGFILE
