@@ -26,7 +26,7 @@ then
 dnf install $package -y &>>$LOGFILE
 validate $? "install $package"
 else
-echo "$package already installed";
+echo "$package already installed"
 fi
 done
 
