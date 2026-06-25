@@ -15,7 +15,7 @@ echo "$2 got failed"
 fi
 }
 dnf install nginx -y
-echo "value $ ?"
+echo "value $?"
 validate $? "install nginx"
 
 dnf install mysql -y
